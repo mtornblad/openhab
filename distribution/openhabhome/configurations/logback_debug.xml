@@ -28,6 +28,21 @@
 		</encoder>
 	</appender>
 
+	<appender name="SMARTBUSFILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/smartbus.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- weekly rollover and archiving -->
+			<fileNamePattern>events-%d{yyyy-ww}.log.zip</fileNamePattern>
+
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
 	<logger name="runtime.busevents" level="INFO" additivity="false">
 		<appender-ref ref="EVENTFILE" />
 		<appender-ref ref="STDOUT" />
@@ -46,6 +61,10 @@
 	<logger name="org.openhab.binding.vdr" level="DEBUG" />
 	<logger name="org.openhab.model.core.internal.folder" level="INFO" />
 	<logger name="org.openhab.io.dropbox" level="DEBUG" />
+	
+	<logger name="org.openhab.binding.smartbus" level="DEBUG">
+		<appender-ref ref="SMARTBUSFILE" />
+	</logger>
 
 	<logger name="OSGi" level="WARN" />
 	<logger name="org.eclipse.jetty" level="WARN" />
