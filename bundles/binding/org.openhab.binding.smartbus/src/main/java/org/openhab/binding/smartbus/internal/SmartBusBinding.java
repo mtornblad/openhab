@@ -14,6 +14,7 @@ import java.util.Dictionary;
 import org.apache.commons.lang.StringUtils;
 import org.openhab.binding.smartbus.SmartBusBindingProvider;
 import org.openhab.core.binding.AbstractActiveBinding;
+import org.openhab.core.library.types.OnOffType;
 import org.openhab.core.types.Command;
 import org.openhab.core.types.State;
 import org.osgi.service.cm.ConfigurationException;
@@ -21,7 +22,9 @@ import org.osgi.service.cm.ManagedService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import se.brittatorp.homeauto.smartbus.events.PackageReceivedEvent;
+import se.brittatorp.common.Helpers;
+import se.brittatorp.homeauto.smartbus.SmartbusCallbacks;
+import se.brittatorp.homeauto.smartbus.operations.ForwardlyReportStatus;
 import se.brittatorp.homeauto.smartbus.operations.OperationBase;
 import se.brittatorp.homeauto.smartbus.transports.*;;
 	
@@ -33,7 +36,7 @@ import se.brittatorp.homeauto.smartbus.transports.*;;
  * @author Mattias
  * @since 1.4.0
  */
-public class SmartBusBinding extends AbstractActiveBinding<SmartBusBindingProvider> implements ManagedService, PackageReceivedEvent {
+public class SmartBusBinding extends AbstractActiveBinding<SmartBusBindingProvider> implements ManagedService, SmartbusCallbacks {
 
 	private static final Logger logger = 
 		LoggerFactory.getLogger(SmartBusBinding.class);
@@ -146,17 +149,24 @@ public class SmartBusBinding extends AbstractActiveBinding<SmartBusBindingProvid
 
 	@Override
     public void PackageReceivedEvent(SmartbusPacket smartbusPacket) {
-		OperationBase operationBase = OperationBase.getOperation(smartbusPacket);
-    	logger.debug("Packet CRC:     " + String.format("%04x", smartbusPacket.getCrc()).toUpperCase());
-    	logger.debug("Calculated CRC: " + String.format("%04x", smartbusPacket.calculateCRC()).toUpperCase());
-		if (operationBase != null) {
-			try {
-				logger.debug("OperationFields: " + operationBase.getFieldValues());
-			} catch (IllegalArgumentException | IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}        
-	    }
+		switch(smartbusPacket.getOperationCode()){
+			case 0xEFFF	:
+				ForwardlyReportStatus operation = new ForwardlyReportStatus(smartbusPacket);
+				for (SmartBusBindingProvider provider : providers) {
+					for (String itemName : provider.getItemNames()) {
+						if ((provider.getSubnetId(itemName)==smartbusPacket.getOriginalSubnetId()) & (provider.getDeviceId(itemName)==smartbusPacket.getOriginalDeviceId())) {
+							eventPublisher.postUpdate(itemName, operation.statusOfChannel[provider.getChannelNo(itemName)-1] ? OnOffType.ON : OnOffType.OFF);
+						}
+					}
+				}
+				break;
+			default:
+				OperationBase operationBase = OperationBase.getOperation(smartbusPacket);
+				if (operationBase != null) {
+					logger.debug("OperationFields: " + Helpers.getDeclaredFieldsAsString(operationBase));
+				}
+		}
+			
 	}
 
 }

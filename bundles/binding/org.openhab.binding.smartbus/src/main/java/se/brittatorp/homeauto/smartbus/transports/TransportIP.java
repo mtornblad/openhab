@@ -10,7 +10,8 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import se.brittatorp.homeauto.smartbus.events.PackageReceivedEvent;
+
+import se.brittatorp.homeauto.smartbus.SmartbusCallbacks;
 
 /**
  *
@@ -21,9 +22,9 @@ public class TransportIP extends TransportBase {
     private int portNumber = 6000;
     private int maxPackageLength = 80 + 14;
     private DatagramSocket socket = null;
-    private PackageReceivedEvent packageReceivedEvent;
+    private SmartbusCallbacks packageReceivedEvent;
 
-    public TransportIP(PackageReceivedEvent packageReceivedEvent) throws SocketException {   //Todo: Replace with error handling
+    public TransportIP(SmartbusCallbacks packageReceivedEvent) throws SocketException {   //Todo: Replace with error handling
         this.packageReceivedEvent = packageReceivedEvent;
         this.socket = new DatagramSocket(portNumber);
     }
@@ -36,6 +37,7 @@ public class TransportIP extends TransportBase {
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
                 socket.receive(packet);
                 SmartbusIPPacket udpPacket = new SmartbusIPPacket(packet);
+                packageReceivedEvent.PackageReceivedEvent(udpPacket);
             } catch (IOException ex) {
                 Logger.getLogger(TransportIP.class.getName()).log(Level.SEVERE, null, ex);
             }

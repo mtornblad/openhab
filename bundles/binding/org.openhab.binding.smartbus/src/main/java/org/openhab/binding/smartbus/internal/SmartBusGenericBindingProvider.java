@@ -12,8 +12,6 @@ import org.openhab.binding.smartbus.SmartBusBindingProvider;
 import org.openhab.core.binding.BindingConfig;
 import org.openhab.core.autoupdate.AutoUpdateBindingProvider;
 import org.openhab.core.items.Item;
-import org.openhab.core.library.items.DimmerItem;
-import org.openhab.core.library.items.SwitchItem;
 import org.openhab.model.item.binding.AbstractGenericBindingProvider;
 import org.openhab.model.item.binding.BindingConfigParseException;
 import org.slf4j.Logger;
@@ -29,7 +27,6 @@ import org.slf4j.LoggerFactory;
 public class SmartBusGenericBindingProvider extends AbstractGenericBindingProvider implements SmartBusBindingProvider, AutoUpdateBindingProvider {
 	
 	private static final Logger logger = LoggerFactory.getLogger(SmartBusBinding.class);	
-	private boolean autoUpdate = false;	//nyull
 
 	/**
 	 * {@inheritDoc}
@@ -55,9 +52,16 @@ public class SmartBusGenericBindingProvider extends AbstractGenericBindingProvid
 	 */
 	@Override
 	public void processBindingConfiguration(String context, Item item, String bindingConfig) throws BindingConfigParseException {
-		logger.debug("processBindingConfiguration() method is called for item: " + item.getName());
 		super.processBindingConfiguration(context, item, bindingConfig);
+		
+		String[]params=bindingConfig.split(",");
+	
 		SmartBusBindingConfig config = new SmartBusBindingConfig();
+		config.subnetId = Integer.parseInt(params[0]);
+		config.deviceId = Integer.parseInt(params[1]);
+		config.channelNo = Integer.parseInt(params[2]);
+		logger.debug(String.format("processBindingConfiguration() method is called for context: %s, item: %s, bindingConfig: %s, subnet: %d, device: %d, channel: %d",context, item.getName(), bindingConfig, config.subnetId, config.deviceId, config.channelNo));
+		
 		
 		//parse bindingconfig here ...
 		
@@ -66,8 +70,8 @@ public class SmartBusGenericBindingProvider extends AbstractGenericBindingProvid
 	
 	
 	class SmartBusBindingConfig implements BindingConfig {
-		public int targetSubnetId = 0;
-		public int targetDeviceId = 0;
+		public int subnetId = 0;
+		public int deviceId = 0;
 		public int channelNo = 0;
 		// put member fields here which holds the parsed values
 	}
@@ -76,8 +80,28 @@ public class SmartBusGenericBindingProvider extends AbstractGenericBindingProvid
 	@Override
 	public Boolean autoUpdate(String itemName) {
 		logger.debug("Autoupdate is off for: " + itemName);
-		return this.autoUpdate;
+		//return this.autoUpdate;
+		return Boolean.FALSE;
+	}
+
+	@Override
+	public int getSubnetId(String itemName) {
+		SmartBusBindingConfig config = (SmartBusBindingConfig) bindingConfigs.get(itemName);
+		return config != null ? config.subnetId: 0;
+	}
+
+	@Override
+	public int getDeviceId(String itemName) {
+		SmartBusBindingConfig config = (SmartBusBindingConfig) bindingConfigs.get(itemName);
+		return config != null ? config.deviceId: 0;
+	}
+
+	@Override
+	public int getChannelNo(String itemName) {
+		SmartBusBindingConfig config = (SmartBusBindingConfig) bindingConfigs.get(itemName);
+		return config != null ? config.channelNo: 0;
 	}
 	
+
 	
 }

@@ -4,7 +4,8 @@
  */
 package se.brittatorp.common;
 
-import java.util.ArrayList;
+import java.lang.reflect.Field;
+import java.util.Arrays;
 
 
 /**
@@ -52,6 +53,50 @@ public class Helpers {
 
     static public void updateArray(byte[] byteArray, int position, short aByte) {
     	byteArray[position]=(byte)(aByte & 0xff);
+    }
+
+    static public String getDeclaredFieldsAsString(Object object, String separator) {
+        String fields=null;
+        Field field;
+        String fieldName;
+        String fieldValue;
+    	try {
+    		for(int i=0;i<object.getClass().getDeclaredFields().length;i++){
+    			field = object.getClass().getDeclaredFields()[i];
+    			field.setAccessible(true);
+    			fieldName = field.getName();
+            
+        		Class<?> c = field.getType();
+        		if (c == String.class){
+        			fieldValue = (String)field.get(object);
+        		} else if (c == String[].class){
+        			fieldValue = Arrays.toString((String[])field.get(object));
+        		} else if (c == boolean[].class){
+        			fieldValue = Arrays.toString((boolean[])field.get(object));
+        		} else if (c == int[].class){
+        			fieldValue = Arrays.toString((int[])field.get(object));
+        		} else if (c == short[].class){
+        			fieldValue = Arrays.toString((short[])field.get(object));
+        		} else {
+					fieldValue = field.get(object).toString();
+        		}
+
+        		if (fields==null) {
+        			fields = fieldName + "=" + fieldValue;
+        		} else {
+        			fields = fields + separator + fieldName + "=" + fieldValue;
+        		}
+
+    		}	
+		} catch (IllegalArgumentException | IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        return fields;
+    }
+
+    static public String getDeclaredFieldsAsString(Object object) {
+    	return getDeclaredFieldsAsString(object, "; "); 
     }
 
 }

@@ -20,11 +20,7 @@
 	<property name="event.topics" type="String" value="openhab/command/*" />
 	<property name="service.pid" type="String" value="org.openhab.smartbus" />
 
-	<reference bind="setEventPublisher" cardinality="1..1"
-		interface="org.openhab.core.events.EventPublisher" name="EventPublisher"
-		policy="dynamic" unbind="unsetEventPublisher" />
-	<reference bind="addBindingProvider" cardinality="1..n"
-		interface="org.openhab.binding.smartbus.SmartBusBindingProvider" name="SmartBusBindingProvider"
-		policy="dynamic" unbind="removeBindingProvider" />
+	<reference bind="setEventPublisher" cardinality="1..1" interface="org.openhab.core.events.EventPublisher" name="EventPublisher" policy="dynamic" unbind="unsetEventPublisher" />
+	<reference bind="addBindingProvider" cardinality="1..n" interface="org.openhab.binding.smartbus.SmartBusBindingProvider" name="SmartBusBindingProvider" policy="dynamic" unbind="removeBindingProvider" />
 	
 </scr:component>

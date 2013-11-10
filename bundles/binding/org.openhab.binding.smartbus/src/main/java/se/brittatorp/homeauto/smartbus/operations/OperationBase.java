@@ -8,15 +8,11 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.util.Arrays;
 
 import org.openhab.binding.smartbus.internal.SmartBusBinding;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sun.xml.internal.ws.org.objectweb.asm.Type;
 
 import se.brittatorp.homeauto.smartbus.transports.SmartbusPacket;
 
@@ -102,7 +98,7 @@ public abstract class OperationBase {
     }
 
 
-
+/*
     public String getFieldValues() throws IllegalArgumentException, IllegalAccessException {
         String fields=null;
         Field field;
@@ -115,14 +111,18 @@ public abstract class OperationBase {
             Class<?> c = field.getType();
             if (c == String.class){
             	fieldValue = (String)field.get(this);
-            } else if (c.isArray()){
-//            	short test[]=(short[])field.get(this);
-//            	fieldValue = Arrays.toString(test);
+            } else if (c == String[].class){
+            	fieldValue = Arrays.toString((String[])field.get(this));
+            } else if (c == boolean[].class){
+            	fieldValue = Arrays.toString((boolean[])field.get(this));
+            } else if (c == int[].class){
+            	fieldValue = Arrays.toString((int[])field.get(this));
+            } else if (c == short[].class){
+            	fieldValue = Arrays.toString((short[])field.get(this));
             } else {
             	fieldValue = field.get(this).toString();
             }
-            
-            
+
             if (fields==null) {
                 fields = fieldName + "=" + fieldValue;
             } else {
@@ -132,7 +132,8 @@ public abstract class OperationBase {
         }
         return fields;
     }
-
+*/
+    
     public static OperationBase getOperation(SmartbusPacket smartbusPacket) {
 		OperationBase operationBase = getOperation(smartbusPacket.getOperationCode());
         if (operationBase == null) {

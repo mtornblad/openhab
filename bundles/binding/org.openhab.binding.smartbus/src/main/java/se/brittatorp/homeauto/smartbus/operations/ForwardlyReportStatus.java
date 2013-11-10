@@ -5,8 +5,6 @@
 package se.brittatorp.homeauto.smartbus.operations;
 
 
-import java.util.Arrays;
-
 import se.brittatorp.common.Helpers;
 import se.brittatorp.homeauto.smartbus.operations.OperationBase.SmartBusCommand;
 import se.brittatorp.homeauto.smartbus.transports.SmartbusPacket;
@@ -19,18 +17,22 @@ import se.brittatorp.homeauto.smartbus.transports.SmartbusPacket;
 public class ForwardlyReportStatus extends OperationBase {
 	
 	// String fieldNames[] = {"QtyOfZones", "ByteArray"};
-	short qtyOfZones;
-	short[] statusOfZone;
-	short qtyOfChannels;
-	boolean[] statusOfChannel;	//True = on
+	public short qtyOfZones;
+	public short[] statusOfZone;
+	public short qtyOfChannels;
+	public boolean[] statusOfChannel;	//True = on
 	
-    @Override
+    public ForwardlyReportStatus(SmartbusPacket smartbusPacket) {
+		super(smartbusPacket);
+	}
+
+	@Override
     public void parsePacket(SmartbusPacket packet) {
     	byte[] additionalContent = packet.getAdditionalContent();
     	qtyOfZones = Helpers.byteArray2Short(additionalContent, 0);
     	statusOfZone = new short[qtyOfZones];
     	for(int i=0;i<qtyOfZones;i++){
-    		statusOfZone[i]=additionalContent[i+1];
+    		statusOfZone[i]=Helpers.byteArray2Short(additionalContent, i+1);
     	}
     	qtyOfChannels=Helpers.byteArray2Short(additionalContent, qtyOfZones+1);
     	statusOfChannel = new boolean[qtyOfChannels];

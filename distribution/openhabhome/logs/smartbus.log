@@ -1,0 +1,346 @@
+2013-11-10 13:24:24 - SmartBus binding has been started.
+2013-11-10 13:24:26 - transportUDP thread started!
+2013-11-10 13:24:26 - execute() method is called!
+2013-11-10 13:24:26 - RUNNABLE
+2013-11-10 13:24:26 - Operation not implemented: F036
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_1, bindingConfig: 1,25,1, subnet: 1, device: 25, channel: 1
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_2, bindingConfig: 1,25,2, subnet: 1, device: 25, channel: 2
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_3, bindingConfig: 1,25,3, subnet: 1, device: 25, channel: 3
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_4, bindingConfig: 1,25,4, subnet: 1, device: 25, channel: 4
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_5, bindingConfig: 1,25,5, subnet: 1, device: 25, channel: 5
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_6, bindingConfig: 1,25,6, subnet: 1, device: 25, channel: 6
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_7, bindingConfig: 1,25,7, subnet: 1, device: 25, channel: 7
+2013-11-10 13:24:27 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_8, bindingConfig: 1,25,8, subnet: 1, device: 25, channel: 8
+2013-11-10 13:24:33 - Operation not implemented: F036
+2013-11-10 13:24:40 - Operation not implemented: F036
+2013-11-10 13:24:47 - Operation not implemented: F036
+2013-11-10 13:24:54 - Operation not implemented: F036
+2013-11-10 13:25:01 - Operation not implemented: F036
+2013-11-10 13:25:08 - Operation not implemented: F036
+2013-11-10 13:25:15 - Operation not implemented: F036
+2013-11-10 13:25:22 - Operation not implemented: F036
+2013-11-10 13:25:29 - Operation not implemented: F036
+2013-11-10 13:25:36 - Operation not implemented: F036
+2013-11-10 13:25:43 - Operation not implemented: F036
+2013-11-10 13:25:50 - Operation not implemented: F036
+2013-11-10 13:25:57 - Operation not implemented: F036
+2013-11-10 13:26:05 - Operation not implemented: F036
+2013-11-10 13:26:12 - Operation not implemented: F036
+2013-11-10 13:26:19 - Operation not implemented: F036
+2013-11-10 13:26:26 - execute() method is called!
+2013-11-10 13:26:26 - RUNNABLE
+2013-11-10 13:26:26 - Operation not implemented: F036
+2013-11-10 13:26:33 - Operation not implemented: F036
+2013-11-10 13:26:40 - Operation not implemented: F036
+2013-11-10 13:26:47 - Operation not implemented: F036
+2013-11-10 13:26:54 - Operation not implemented: F036
+2013-11-10 13:27:01 - Operation not implemented: F036
+2013-11-10 13:27:08 - Operation not implemented: F036
+2013-11-10 13:27:15 - Operation not implemented: F036
+2013-11-10 13:27:22 - Operation not implemented: F036
+2013-11-10 13:27:29 - Operation not implemented: F036
+2013-11-10 13:27:36 - Operation not implemented: F036
+2013-11-10 13:27:43 - Operation not implemented: F036
+2013-11-10 13:27:50 - Operation not implemented: F036
+2013-11-10 13:27:57 - Operation not implemented: F036
+2013-11-10 13:28:05 - Operation not implemented: F036
+2013-11-10 13:28:12 - Operation not implemented: F036
+2013-11-10 13:28:19 - Operation not implemented: F036
+2013-11-10 13:28:26 - execute() method is called!
+2013-11-10 13:28:26 - RUNNABLE
+2013-11-10 13:28:26 - Operation not implemented: F036
+2013-11-10 13:28:33 - Operation not implemented: F036
+2013-11-10 13:33:20 - SmartBus binding has been started.
+2013-11-10 13:33:22 - transportUDP thread started!
+2013-11-10 13:33:22 - execute() method is called!
+2013-11-10 13:33:22 - RUNNABLE
+2013-11-10 13:33:22 - Operation not implemented: F036
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_1, bindingConfig: 1,25,1, subnet: 1, device: 25, channel: 1
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_2, bindingConfig: 1,25,2, subnet: 1, device: 25, channel: 2
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_3, bindingConfig: 1,25,3, subnet: 1, device: 25, channel: 3
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_4, bindingConfig: 1,25,4, subnet: 1, device: 25, channel: 4
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_5, bindingConfig: 1,25,5, subnet: 1, device: 25, channel: 5
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_6, bindingConfig: 1,25,6, subnet: 1, device: 25, channel: 6
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_7, bindingConfig: 1,25,7, subnet: 1, device: 25, channel: 7
+2013-11-10 13:33:23 - processBindingConfiguration() method is called for context: demo.items, item: Smartbus_1_25_8, bindingConfig: 1,25,8, subnet: 1, device: 25, channel: 8
+2013-11-10 13:33:29 - Operation not implemented: F036
+2013-11-10 13:33:36 - Operation not implemented: F036
+2013-11-10 13:33:43 - Operation not implemented: F036
+2013-11-10 13:33:50 - Operation not implemented: F036
+2013-11-10 13:33:57 - Operation not implemented: F036
+2013-11-10 13:34:04 - Operation not implemented: F036
+2013-11-10 13:34:12 - Operation not implemented: F036
+2013-11-10 13:34:19 - Operation not implemented: F036
+2013-11-10 13:34:26 - Operation not implemented: F036
+2013-11-10 13:34:33 - Operation not implemented: F036
+2013-11-10 13:34:40 - Operation not implemented: F036
+2013-11-10 13:34:47 - Operation not implemented: F036
+2013-11-10 13:34:54 - Operation not implemented: F036
+2013-11-10 13:35:01 - Operation not implemented: F036
+2013-11-10 13:35:08 - Operation not implemented: F036
+2013-11-10 13:35:15 - Operation not implemented: F036
+2013-11-10 13:35:22 - execute() method is called!
+2013-11-10 13:35:22 - RUNNABLE
+2013-11-10 13:35:22 - Operation not implemented: F036
+2013-11-10 13:35:29 - Operation not implemented: F036
+2013-11-10 13:35:36 - Operation not implemented: F036
+2013-11-10 13:35:43 - Operation not implemented: F036
+2013-11-10 13:35:50 - Operation not implemented: F036
+2013-11-10 13:35:57 - Operation not implemented: F036
+2013-11-10 13:36:04 - Operation not implemented: F036
+2013-11-10 13:36:12 - Operation not implemented: F036
+2013-11-10 13:36:19 - Operation not implemented: F036
+2013-11-10 13:36:26 - Operation not implemented: F036
+2013-11-10 13:36:33 - Operation not implemented: F036
+2013-11-10 13:36:40 - Operation not implemented: F036
+2013-11-10 13:36:47 - Operation not implemented: F036
+2013-11-10 13:36:54 - Operation not implemented: F036
+2013-11-10 13:37:01 - Operation not implemented: F036
+2013-11-10 13:37:08 - Operation not implemented: F036
+2013-11-10 13:37:15 - Operation not implemented: F036
+2013-11-10 13:37:22 - execute() method is called!
+2013-11-10 13:37:22 - RUNNABLE
+2013-11-10 13:37:22 - Operation not implemented: F036
+2013-11-10 13:37:29 - Operation not implemented: F036
+2013-11-10 13:37:36 - Operation not implemented: F036
+2013-11-10 13:37:43 - Operation not implemented: F036
+2013-11-10 13:37:50 - Operation not implemented: F036
+2013-11-10 13:38:05 - Operation not implemented: F036
+2013-11-10 13:38:11 - Operation not implemented: F036
+2013-11-10 13:38:19 - Operation not implemented: F036
+2013-11-10 13:38:26 - Operation not implemented: F036
+2013-11-10 13:38:33 - Operation not implemented: F036
+2013-11-10 13:38:40 - Operation not implemented: F036
+2013-11-10 13:38:47 - Operation not implemented: F036
+2013-11-10 13:38:54 - Operation not implemented: F036
+2013-11-10 13:39:01 - Operation not implemented: F036
+2013-11-10 13:39:08 - Operation not implemented: F036
+2013-11-10 13:39:15 - Operation not implemented: F036
+2013-11-10 13:39:22 - execute() method is called!
+2013-11-10 13:39:22 - RUNNABLE
+2013-11-10 13:39:22 - Operation not implemented: F036
+2013-11-10 13:39:29 - Operation not implemented: F036
+2013-11-10 13:39:36 - Operation not implemented: F036
+2013-11-10 13:39:43 - Operation not implemented: F036
+2013-11-10 13:39:50 - Operation not implemented: F036
+2013-11-10 13:39:57 - Operation not implemented: F036
+2013-11-10 13:40:04 - Operation not implemented: F036
+2013-11-10 13:40:11 - Operation not implemented: F036
+2013-11-10 13:40:26 - Operation not implemented: F036
+2013-11-10 13:40:33 - Operation not implemented: F036
+2013-11-10 13:40:40 - Operation not implemented: F036
+2013-11-10 13:40:47 - Operation not implemented: F036
+2013-11-10 13:40:54 - Operation not implemented: F036
+2013-11-10 13:41:01 - Operation not implemented: F036
+2013-11-10 13:41:08 - Operation not implemented: F036
+2013-11-10 13:41:15 - Operation not implemented: F036
+2013-11-10 13:41:22 - execute() method is called!
+2013-11-10 13:41:22 - RUNNABLE
+2013-11-10 13:41:22 - Operation not implemented: F036
+2013-11-10 13:41:36 - Operation not implemented: F036
+2013-11-10 13:41:43 - Operation not implemented: F036
+2013-11-10 13:41:44 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:41:44 - internalReceiveCommand() is called!
+2013-11-10 13:41:50 - Operation not implemented: F036
+2013-11-10 13:41:55 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:41:55 - internalReceiveCommand() is called!
+2013-11-10 13:41:56 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:41:56 - internalReceiveCommand() is called!
+2013-11-10 13:41:57 - Operation not implemented: F036
+2013-11-10 13:41:58 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:41:58 - internalReceiveCommand() is called!
+2013-11-10 13:41:59 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:41:59 - internalReceiveCommand() is called!
+2013-11-10 13:42:04 - Operation not implemented: F036
+2013-11-10 13:42:11 - Operation not implemented: F036
+2013-11-10 13:42:19 - Operation not implemented: F036
+2013-11-10 13:42:26 - Operation not implemented: F036
+2013-11-10 13:42:33 - Operation not implemented: F036
+2013-11-10 13:42:40 - Operation not implemented: F036
+2013-11-10 13:42:47 - Operation not implemented: F036
+2013-11-10 13:42:54 - Operation not implemented: F036
+2013-11-10 13:43:01 - Operation not implemented: F036
+2013-11-10 13:43:08 - Operation not implemented: F036
+2013-11-10 13:43:15 - Operation not implemented: F036
+2013-11-10 13:43:22 - execute() method is called!
+2013-11-10 13:43:22 - RUNNABLE
+2013-11-10 13:43:22 - Operation not implemented: F036
+2013-11-10 13:43:29 - Operation not implemented: F036
+2013-11-10 13:43:36 - Operation not implemented: F036
+2013-11-10 13:43:43 - Operation not implemented: F036
+2013-11-10 13:43:50 - Operation not implemented: F036
+2013-11-10 13:43:57 - Operation not implemented: F036
+2013-11-10 13:44:04 - Operation not implemented: F036
+2013-11-10 13:44:12 - Operation not implemented: F036
+2013-11-10 13:44:19 - Operation not implemented: F036
+2013-11-10 13:44:26 - Operation not implemented: F036
+2013-11-10 13:44:33 - Operation not implemented: F036
+2013-11-10 13:44:40 - Operation not implemented: F036
+2013-11-10 13:44:47 - Operation not implemented: F036
+2013-11-10 13:44:54 - Operation not implemented: F036
+2013-11-10 13:45:01 - Operation not implemented: F036
+2013-11-10 13:45:08 - Operation not implemented: F036
+2013-11-10 13:45:15 - Operation not implemented: F036
+2013-11-10 13:45:22 - execute() method is called!
+2013-11-10 13:45:22 - RUNNABLE
+2013-11-10 13:45:22 - Operation not implemented: F036
+2013-11-10 13:45:29 - Operation not implemented: F036
+2013-11-10 13:45:36 - Operation not implemented: F036
+2013-11-10 13:45:43 - Operation not implemented: F036
+2013-11-10 13:45:50 - Operation not implemented: F036
+2013-11-10 13:45:57 - Operation not implemented: F036
+2013-11-10 13:46:04 - Operation not implemented: F036
+2013-11-10 13:46:11 - Operation not implemented: F036
+2013-11-10 13:46:18 - Operation not implemented: F036
+2013-11-10 13:46:26 - Operation not implemented: F036
+2013-11-10 13:46:33 - Operation not implemented: F036
+2013-11-10 13:46:40 - Operation not implemented: F036
+2013-11-10 13:46:47 - Operation not implemented: F036
+2013-11-10 13:46:54 - Operation not implemented: F036
+2013-11-10 13:47:01 - Operation not implemented: F036
+2013-11-10 13:47:08 - Operation not implemented: F036
+2013-11-10 13:47:15 - Operation not implemented: F036
+2013-11-10 13:47:22 - execute() method is called!
+2013-11-10 13:47:22 - RUNNABLE
+2013-11-10 13:47:22 - Operation not implemented: F036
+2013-11-10 13:47:29 - Operation not implemented: F036
+2013-11-10 13:47:36 - Operation not implemented: F036
+2013-11-10 13:47:43 - Operation not implemented: F036
+2013-11-10 13:47:50 - Operation not implemented: F036
+2013-11-10 13:47:57 - Operation not implemented: F036
+2013-11-10 13:48:04 - Operation not implemented: F036
+2013-11-10 13:48:11 - Operation not implemented: F036
+2013-11-10 13:48:16 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:48:16 - internalReceiveCommand() is called!
+2013-11-10 13:48:16 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:48:16 - internalReceiveCommand() is called!
+2013-11-10 13:48:18 - Operation not implemented: F036
+2013-11-10 13:48:26 - Operation not implemented: F036
+2013-11-10 13:48:33 - Operation not implemented: F036
+2013-11-10 13:48:35 - Autoupdate is off for: Smartbus_1_25_3
+2013-11-10 13:48:35 - internalReceiveCommand() is called!
+2013-11-10 13:48:37 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:48:37 - internalReceiveCommand() is called!
+2013-11-10 13:48:38 - Autoupdate is off for: Smartbus_1_25_3
+2013-11-10 13:48:38 - internalReceiveCommand() is called!
+2013-11-10 13:48:40 - Operation not implemented: F036
+2013-11-10 13:48:47 - Operation not implemented: F036
+2013-11-10 13:48:54 - Operation not implemented: F036
+2013-11-10 13:49:01 - Operation not implemented: F036
+2013-11-10 13:49:14 - Operation not implemented: F036
+2013-11-10 13:49:21 - Operation not implemented: F036
+2013-11-10 13:49:22 - execute() method is called!
+2013-11-10 13:49:22 - RUNNABLE
+2013-11-10 13:49:32 - Autoupdate is off for: Smartbus_1_25_2
+2013-11-10 13:49:32 - internalReceiveCommand() is called!
+2013-11-10 13:49:35 - Operation not implemented: F036
+2013-11-10 13:49:37 - Autoupdate is off for: Smartbus_1_25_1
+2013-11-10 13:49:37 - internalReceiveCommand() is called!
+2013-11-10 13:49:43 - Operation not implemented: F036
+2013-11-10 13:49:50 - Operation not implemented: F036
+2013-11-10 13:49:57 - Operation not implemented: F036
+2013-11-10 13:50:04 - Operation not implemented: F036
+2013-11-10 13:50:11 - Operation not implemented: F036
+2013-11-10 13:50:18 - Operation not implemented: F036
+2013-11-10 13:50:25 - Operation not implemented: F036
+2013-11-10 13:50:32 - Operation not implemented: F036
+2013-11-10 13:50:39 - Operation not implemented: F036
+2013-11-10 13:50:46 - Operation not implemented: F036
+2013-11-10 13:50:53 - Operation not implemented: F036
+2013-11-10 13:51:00 - Operation not implemented: F036
+2013-11-10 13:51:07 - Operation not implemented: F036
+2013-11-10 13:51:14 - Operation not implemented: F036
+2013-11-10 13:51:21 - Operation not implemented: F036
+2013-11-10 13:51:22 - execute() method is called!
+2013-11-10 13:51:22 - RUNNABLE
+2013-11-10 13:51:28 - Operation not implemented: F036
+2013-11-10 13:51:36 - Operation not implemented: F036
+2013-11-10 13:51:43 - Operation not implemented: F036
+2013-11-10 13:51:50 - Operation not implemented: F036
+2013-11-10 13:51:57 - Operation not implemented: F036
+2013-11-10 13:52:04 - Operation not implemented: F036
+2013-11-10 13:52:11 - Operation not implemented: F036
+2013-11-10 13:52:18 - Operation not implemented: F036
+2013-11-10 13:52:25 - Operation not implemented: F036
+2013-11-10 13:52:32 - Operation not implemented: F036
+2013-11-10 13:52:39 - Operation not implemented: F036
+2013-11-10 13:52:46 - Operation not implemented: F036
+2013-11-10 13:52:53 - Operation not implemented: F036
+2013-11-10 13:53:00 - Operation not implemented: F036
+2013-11-10 13:53:07 - Operation not implemented: F036
+2013-11-10 13:53:14 - Operation not implemented: F036
+2013-11-10 13:53:21 - Operation not implemented: F036
+2013-11-10 13:53:22 - execute() method is called!
+2013-11-10 13:53:22 - RUNNABLE
+2013-11-10 13:53:28 - Operation not implemented: F036
+2013-11-10 13:53:36 - Operation not implemented: F036
+2013-11-10 13:53:43 - Operation not implemented: F036
+2013-11-10 13:53:50 - Operation not implemented: F036
+2013-11-10 13:53:57 - Operation not implemented: F036
+2013-11-10 13:54:04 - Operation not implemented: F036
+2013-11-10 13:54:11 - Operation not implemented: F036
+2013-11-10 13:54:18 - Operation not implemented: F036
+2013-11-10 13:54:25 - Operation not implemented: F036
+2013-11-10 13:54:32 - Operation not implemented: F036
+2013-11-10 13:54:39 - Operation not implemented: F036
+2013-11-10 13:54:46 - Operation not implemented: F036
+2013-11-10 13:54:53 - Operation not implemented: F036
+2013-11-10 13:55:00 - Operation not implemented: F036
+2013-11-10 13:55:07 - Operation not implemented: F036
+2013-11-10 13:55:14 - Operation not implemented: F036
+2013-11-10 13:55:21 - Operation not implemented: F036
+2013-11-10 13:55:22 - execute() method is called!
+2013-11-10 13:55:22 - RUNNABLE
+2013-11-10 13:55:28 - Operation not implemented: F036
+2013-11-10 13:55:35 - Operation not implemented: F036
+2013-11-10 13:55:42 - Operation not implemented: F036
+2013-11-10 13:55:50 - Operation not implemented: F036
+2013-11-10 13:55:57 - Operation not implemented: F036
+2013-11-10 13:56:04 - Operation not implemented: F036
+2013-11-10 13:56:11 - Operation not implemented: F036
+2013-11-10 13:56:18 - Operation not implemented: F036
+2013-11-10 13:56:25 - Operation not implemented: F036
+2013-11-10 13:56:32 - Operation not implemented: F036
+2013-11-10 13:56:39 - Operation not implemented: F036
+2013-11-10 13:56:46 - Operation not implemented: F036
+2013-11-10 13:56:53 - Operation not implemented: F036
+2013-11-10 13:57:00 - Operation not implemented: F036
+2013-11-10 13:57:07 - Operation not implemented: F036
+2013-11-10 13:57:14 - Operation not implemented: F036
+2013-11-10 13:57:21 - Operation not implemented: F036
+2013-11-10 13:57:22 - execute() method is called!
+2013-11-10 13:57:22 - RUNNABLE
+2013-11-10 13:57:28 - Operation not implemented: F036
+2013-11-10 13:57:35 - Operation not implemented: F036
+2013-11-10 13:57:43 - Operation not implemented: F036
+2013-11-10 13:57:50 - Operation not implemented: F036
+2013-11-10 13:57:57 - Operation not implemented: F036
+2013-11-10 13:58:04 - Operation not implemented: F036
+2013-11-10 13:58:11 - Operation not implemented: F036
+2013-11-10 13:58:18 - Operation not implemented: F036
+2013-11-10 13:58:25 - Operation not implemented: F036
+2013-11-10 13:58:32 - Operation not implemented: F036
+2013-11-10 13:58:39 - Operation not implemented: F036
+2013-11-10 13:58:46 - Operation not implemented: F036
+2013-11-10 13:58:53 - Operation not implemented: F036
+2013-11-10 13:59:00 - Operation not implemented: F036
+2013-11-10 13:59:07 - Operation not implemented: F036
+2013-11-10 13:59:14 - Operation not implemented: F036
+2013-11-10 13:59:21 - Operation not implemented: F036
+2013-11-10 13:59:22 - execute() method is called!
+2013-11-10 13:59:22 - RUNNABLE
+2013-11-10 13:59:28 - Operation not implemented: F036
+2013-11-10 13:59:35 - Operation not implemented: F036
+2013-11-10 13:59:43 - Operation not implemented: F036
+2013-11-10 13:59:57 - Operation not implemented: F036
+2013-11-10 14:00:04 - Operation not implemented: F036
+2013-11-10 14:00:11 - Operation not implemented: F036
+2013-11-10 14:00:18 - Operation not implemented: F036
+2013-11-10 14:00:25 - Operation not implemented: F036
+2013-11-10 14:00:32 - Operation not implemented: F036
+2013-11-10 14:00:39 - Operation not implemented: F036
+2013-11-10 14:00:46 - Operation not implemented: F036
+2013-11-10 14:00:53 - Operation not implemented: F036
+2013-11-10 14:01:00 - Operation not implemented: F036
+2013-11-10 14:01:07 - Operation not implemented: F036
+2013-11-10 14:01:14 - Operation not implemented: F036

@@ -6,7 +6,6 @@ package se.brittatorp.homeauto.smartbus.transports;
 
 import java.util.Arrays;
 import se.brittatorp.common.Helpers;
-import se.brittatorp.homeauto.smartbus.operations.OperationBase;
 
 /**
  *

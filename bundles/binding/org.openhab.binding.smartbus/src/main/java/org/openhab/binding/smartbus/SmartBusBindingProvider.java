@@ -15,5 +15,7 @@ import org.openhab.core.binding.BindingProvider;
  * @since 1.4.0
  */
 public interface SmartBusBindingProvider extends BindingProvider {
-
+	public int getSubnetId(String itemName);
+	public int getDeviceId(String itemName);
+	public int getChannelNo(String itemName);
 }

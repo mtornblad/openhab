@@ -5,17 +5,13 @@
 package se.brittatorp.homeauto.smartbus.transports;
 
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.InvocationTargetException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class SmartbusIPPacket extends SmartbusPacket {
 
-    private DatagramPacket datagramPacket;
     private String asciiHead;
     private InetAddress sourceIp;
     

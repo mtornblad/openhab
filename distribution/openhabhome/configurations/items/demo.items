@@ -1,8 +1,11 @@
 Group All
 
 
-Switch	SmartbusNoAUSwitch		"SmartbusNoAUSwitch"	(All)	{smartbus="SmartbusNoAUSwitch",  autoupdate="false"}
-Switch	SmartbusSwitch		"SmartbusSwitch"	(All)	{smartbus="SmartbusSwitch"}
-Dimmer	SmartbusDimmer		"SmartbusDimmer"	(All)	{ smartbus="SmartbusDimmer" }
-Number	SmartbusNumber		"SmartbusNumber"	(All)	{smartbus="SmartbusNumber"}
-String	SmartbusString		"SmartbusString"	(All)	{smartbus="SmartbusString"}	
+Switch	Smartbus_1_25_1		"Smartbus_1_25_1"	(All)	{smartbus="1,25,1"}
+Switch	Smartbus_1_25_2		"Smartbus_1_25_2"	(All)	{smartbus="1,25,2"}
+Switch	Smartbus_1_25_3		"Smartbus_1_25_3"	(All)	{smartbus="1,25,3"}
+Switch	Smartbus_1_25_4		"Smartbus_1_25_4"	(All)	{smartbus="1,25,4"}
+Switch	Smartbus_1_25_5		"Smartbus_1_25_5"	(All)	{smartbus="1,25,5"}
+Switch	Smartbus_1_25_6		"Smartbus_1_25_6"	(All)	{smartbus="1,25,6"}
+Switch	Smartbus_1_25_7		"Smartbus_1_25_7"	(All)	{smartbus="1,25,7"}
+Switch	Smartbus_1_25_8		"Smartbus_1_25_8"	(All)	{smartbus="1,25,8"}
