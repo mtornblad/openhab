@@ -26,6 +26,7 @@ import se.brittatorp.common.Helpers;
 import se.brittatorp.homeauto.smartbus.SmartbusCallbacks;
 import se.brittatorp.homeauto.smartbus.operations.ForwardlyReportStatus;
 import se.brittatorp.homeauto.smartbus.operations.OperationBase;
+import se.brittatorp.homeauto.smartbus.operations.SingleChannelControl;
 import se.brittatorp.homeauto.smartbus.transports.*;;
 	
 
@@ -113,6 +114,31 @@ public class SmartBusBinding extends AbstractActiveBinding<SmartBusBindingProvid
 		// event bus goes here. This method is only called if one of the 
 		// BindingProviders provide a binding for the given 'itemName'.
 		logger.debug("internalReceiveCommand() is called!");
+		SmartBusBindingProvider provider = findFirstMatchingBindingProvider(itemName);
+		int channelNo = provider.getChannelNo(itemName);
+		int devId = provider.getDeviceId(itemName);
+		int snetId = provider.getSubnetId(itemName);
+		logger.debug("DevId: " + devId);
+		SingleChannelControl operation = new SingleChannelControl((short)channelNo, (short)1, 1);
+		SmartbusPacket packet = new SmartbusPacket((short)1,(short)1,118,(short)snetId,(short)devId,(OperationBase)operation);
+		transportUdp.send(packet);
+	}
+	
+	private SmartBusBindingProvider findFirstMatchingBindingProvider(String itemName) {
+
+		SmartBusBindingProvider firstMatchingProvider = null;
+
+		for (SmartBusBindingProvider provider : this.providers) {
+
+			int channelNo = provider.getChannelNo(itemName);
+
+			if (channelNo > 0) {
+				firstMatchingProvider = provider;
+				break;
+			}
+		}
+
+		return firstMatchingProvider;
 	}
 	
 	/**

@@ -10,12 +10,15 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 
+import se.brittatorp.common.Helpers;
+import se.brittatorp.homeauto.smartbus.operations.OperationBase;
+
 public class SmartbusIPPacket extends SmartbusPacket {
 
-    private String asciiHead;
+    private String asciiHead = "SMARTCLOUD";
     private InetAddress sourceIp;
     
-    public SmartbusIPPacket(DatagramPacket datagramPacket) {
+    	public SmartbusIPPacket(DatagramPacket datagramPacket) {
     	loadPacket(datagramPacket);
 	}
 
@@ -34,9 +37,31 @@ public class SmartbusIPPacket extends SmartbusPacket {
         return true;
     }
 
-    public DatagramPacket getDatagramPacket() {
-        return null;
+    private byte[] getUdpPacket() {
+    	
+    	byte[] packet = new byte[this.getLength()+14];
+    	
+    	//SmartbusPacket
+    	byte[]ip = sourceIp.getAddress();
+    	for (int i=0;i<ip.length;i++){
+    		packet[i]=ip[i];
+    	}
+    	
+    	//SmartbusPacket
+    	byte[]head = asciiHead.getBytes();
+    	for (int i=0;i<head.length;i++){
+    		packet[i+4]=head[i];
+    	}    	
+    	
+    	//SmartbusPacket
+    	byte[]content = this.getPacket();
+    	for (int i=0;i<content.length;i++){
+    		packet[i+14]=content[i];
+    	}
+    	
+    	return packet;
     }
+
 
     public String getAsciiHead() {
         return asciiHead;

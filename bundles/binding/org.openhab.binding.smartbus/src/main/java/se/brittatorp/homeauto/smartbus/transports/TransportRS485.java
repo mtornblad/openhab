@@ -11,7 +11,7 @@ package se.brittatorp.homeauto.smartbus.transports;
 public class TransportRS485 extends TransportBase {
 
     @Override
-    boolean Send(SmartbusPacket smartbusPackage) {
+    boolean send(SmartbusPacket smartbusPackage) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

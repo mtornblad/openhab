@@ -26,7 +26,7 @@ public class ForwardlyReportStatus extends OperationBase {
 		super(smartbusPacket);
 	}
 
-	@Override
+
     public void parsePacket(SmartbusPacket packet) {
     	byte[] additionalContent = packet.getAdditionalContent();
     	qtyOfZones = Helpers.byteArray2Short(additionalContent, 0);
@@ -42,4 +42,11 @@ public class ForwardlyReportStatus extends OperationBase {
     		statusOfChannel[i]=((j&1)==1);
     	}
     }
+
+
+	@Override
+	public byte[] getData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

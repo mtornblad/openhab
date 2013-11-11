@@ -10,7 +10,7 @@ package se.brittatorp.homeauto.smartbus.transports;
  */
 public abstract class TransportBase extends Thread {
 
-    abstract boolean Send(SmartbusPacket smartbusPackage);
+    abstract boolean send(SmartbusPacket smartbusPackage);
 
     abstract public void run();
 }

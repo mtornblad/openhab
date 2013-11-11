@@ -97,42 +97,6 @@ public abstract class OperationBase {
         return broadcast;
     }
 
-
-/*
-    public String getFieldValues() throws IllegalArgumentException, IllegalAccessException {
-        String fields=null;
-        Field field;
-        String fieldName;
-        String fieldValue;
-        for(int i=0;i<this.getClass().getDeclaredFields().length;i++){
-            field = this.getClass().getDeclaredFields()[i];
-            fieldName = field.getName();
-            
-            Class<?> c = field.getType();
-            if (c == String.class){
-            	fieldValue = (String)field.get(this);
-            } else if (c == String[].class){
-            	fieldValue = Arrays.toString((String[])field.get(this));
-            } else if (c == boolean[].class){
-            	fieldValue = Arrays.toString((boolean[])field.get(this));
-            } else if (c == int[].class){
-            	fieldValue = Arrays.toString((int[])field.get(this));
-            } else if (c == short[].class){
-            	fieldValue = Arrays.toString((short[])field.get(this));
-            } else {
-            	fieldValue = field.get(this).toString();
-            }
-
-            if (fields==null) {
-                fields = fieldName + "=" + fieldValue;
-            } else {
-                fields = fields + "\n" + fieldName + "=" + fieldValue;
-            }
-
-        }
-        return fields;
-    }
-*/
     
     public static OperationBase getOperation(SmartbusPacket smartbusPacket) {
 		OperationBase operationBase = getOperation(smartbusPacket.getOperationCode());
@@ -176,6 +140,7 @@ public abstract class OperationBase {
     }
     
     abstract public void parsePacket(SmartbusPacket packet);
+    abstract public byte[] getData();
     //abstract public String[] getFieldNames();
     //abstract public boolean setField(String fieldName, String value);
     //abstract public String getField(String fieldName);

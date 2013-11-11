@@ -6,6 +6,7 @@ package se.brittatorp.homeauto.smartbus.transports;
 
 import java.util.Arrays;
 import se.brittatorp.common.Helpers;
+import se.brittatorp.homeauto.smartbus.operations.OperationBase;
 
 /**
  *
@@ -63,7 +64,27 @@ public class SmartbusPacket {
     public SmartbusPacket() {
     }
 
-    public SmartbusPacket(byte[] packet) {
+    
+
+    public SmartbusPacket(short originalSubnetId, short originalDeviceId, int originalDeviceType, short targetSubnetId, short targetDeviceId, OperationBase operation) {
+		super();
+		this.originalSubnetId = originalSubnetId;
+		this.originalDeviceId = originalDeviceId;
+		this.originalDeviceType = originalDeviceType;
+		this.targetSubnetId = targetSubnetId;
+		this.targetDeviceId = targetDeviceId;
+
+		//this.additionalContent = operation.getCommandCode();
+		this.operationCode = operation.getCommandCode();
+		this.additionalContent = operation.getData();
+		this.length = (short) (operation.getData().length + 11);
+		this.crc = calculateCRC();
+		
+	}
+
+
+
+	public SmartbusPacket(byte[] packet) {
     	loadPacket(packet);
     }
     
@@ -114,9 +135,8 @@ public class SmartbusPacket {
     	
     	return packet;
     }
-
     
-    public int calculateCRC() {
+    private int calculateCRC() {
 
     byte[] packet = this.getPacket();
 
@@ -183,4 +203,14 @@ public class SmartbusPacket {
     public int getCrc() {
         return crc;
     }
+
+    public boolean validCRC() {
+    	return (calculateCRC() == crc);
+    }
+    
+    public void generateCRC(){
+    	crc=calculateCRC();
+    }
+
 }
+
